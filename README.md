@@ -61,9 +61,10 @@ E-mail |Jelly.K.Wang@qq.com
 * [details折叠语法](#details折叠语法)
 * [注释](#注释)
 * [其他](#其他)
+    * github markdown暂不支持功能
     * 上标
     * 下标
-
+    * 自定义锚点
 
 
 规范
@@ -687,39 +688,41 @@ details折叠语法
 
 其他
 --
-* 目前github暂时不支持markdown流程控制语法
-* 目前github暂时不支持css语法，如字体颜色、字体等
-* 目前github不支持文本块行号显示
-* 上标
-    ```text
-    2<sup>3</sub>
-    ```
-    **效果**  
-    2<sup>3</sub>
+### github markdown暂不支持的功能
+    * 目前github暂时不支持markdown流程控制语法
+    * 目前github暂时不支持css语法，如字体颜色、字体等
+    * 目前github不支持文本块行号显示
+### 上标
+```text
+2<sup>3</sub>
+```
+**效果**  
+2<sup>3</sub>
 
-* 下标
-    ```text
-    H<sub>2</sub>O
-    ```
-    **效果**  
-    H<sub>2</sub>O
+### 下标
+```text
+H<sub>2</sub>O
+```
+**效果**  
+H<sub>2</sub>O
 
-* 自定义非标题的锚点
+### 自定义锚点
+```text
+解析器会为标题分配一个锚点id。
+但有时候需要连接到不是标题的区域中
+这时用自定义锚点方法，再合适不过了
+```
+1. 标记要跳转到的位置
     ```text
-    有时候连接到本文中不是标题的区域中，有不想把它设置为标题。
-    这时用自定义锚点方法，再合适不过了
+    <span id = "myjump">提示信息</span>
+    如果不想显示 提示信息，可以设么都不写
+    如：
+    <span id = "myjump"></span>
     ```
-    1. 标记要跳转到的位置
-        ```text
-        <span id = "myjump">提示信息</span>
-        如果不想显示 提示信息，可以设么都不写
-        如：
-        <span id = "myjump"></span>
-        ```
-    2. 在需要连接到锚点的地方使用锚点
-        ```text
-        [说明文字](#myjump)
-        ```
+2. 在需要连接到锚点的地方使用锚点
+    ```text
+    [说明文字](#myjump)
+    ```
 
 --------------------------------
 <!--
@@ -751,6 +754,7 @@ details折叠语法
 
 
 ```text
+// 定义URL变量
 [csdn]:http://blog.csdn.net/guodongxiaren "我的博客"
 [zhihu]:https://www.zhihu.com/people/jellywong "我的知乎，欢迎关注"
 [weibo]:http://weibo.com/linpiaochen
