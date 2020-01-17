@@ -65,7 +65,7 @@ E-mail |Jelly.K.Wang@qq.com
     * 上标
     * 下标
     * 自定义锚点
-
+    * 参考资料注解
 
 规范
 --
@@ -135,7 +135,7 @@ ___
 一级标题--Setex风格
 ==
 
-物价于
+等价于
 
 # 一级标题--Setex风格
 ```
@@ -723,15 +723,26 @@ H<sub>2</sub>O
 ```
 1. 标记要跳转到的位置
     ```text
-    <span id = "myjump">提示信息</span>
-    如果不想显示 提示信息，可以设么都不写
+    <span id="myjump">提示信息</span>
+    如果不想显示 提示信息，可以什么都不写
     如：
-    <span id = "myjump"></span>
+    <span id="myjump"></span>
     ```
 2. 在需要连接到锚点的地方使用锚点
     ```text
     [说明文字](#myjump)
     ```
+
+### 参考资料注解
+百科文章里，有些文字后有 <sup>[\[1\]]</sup>，表示参考资料引用，点击可跳转过去  
+这里可以用 自定义锚点 + 上标 方法来做
+
+```text
+百科文章里，有些文字后有 <sup>[\[1\]]</sup>，表示参考资料引用，点击可跳转过去  
+这里可以用 自定义锚点 + 上标 方法来做
+
+[\[1\]]:https://baike.baidu.com/ "百度百科"
+```
 
 --------------------------------
 <!--
@@ -760,7 +771,7 @@ H<sub>2</sub>O
 [weibo-logo]:/img/weibo.png "点击图片进入我的微博"
 [csdn-logo]:/img/csdn.png "我的CSDN博客"
 [code-past]:https://img-blog.csdnimg.cn/201908060004034.png
-
+[\[1\]]:https://baike.baidu.com/ "百度百科"
 
 ```text
 // 定义URL变量
@@ -771,4 +782,5 @@ H<sub>2</sub>O
 [weibo-logo]:/img/weibo.png "点击图片进入我的微博"
 [csdn-logo]:/img/csdn.png "我的CSDN博客"
 [code-past]:https://img-blog.csdnimg.cn/201908060004034.png
+[\[1\]]:https://baike.baidu.com/ "百度百科"
 ```
