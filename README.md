@@ -333,7 +333,7 @@ https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
 
 嵌入视频
 --
-使用html中的video标签
+使用html中的video标签，github markdown暂不支持，Typora支持
 ```html
 <video class="player" 
     src="media/realEstateAD.mp4" 
@@ -366,7 +366,7 @@ preload: 是否预加载，auto：自动预加载，none: 不预加载
 
 嵌入音频
 --
-
+使用html中的audio标签，github markdown暂不支持，Typora支持
 ```html
 <audio controls="" preload="auto" height="0" width="0" autoplay="false"
        src="http://119.147.228.28/amobile.music.tc.qq.com/C400001R8Zeo1tf1fS.m4a?guid=3070280983&amp;vkey=D73F717249D433A37DF1E10D13FC530839A5C96FEF39B46B40CA4F50EF784ABB9D7CD5DDA90A668847F1E0FAAFC3AA3060B043C62B22B2E4&amp;uin=7078&amp;fromtag=66"
@@ -378,6 +378,7 @@ preload: 是否预加载，auto：自动预加载，none: 不预加载
 ```
 
 ```text
+preload: 是否预加载
 source标签中的src属性：指定音频资源URL
 ```
 
