@@ -379,7 +379,8 @@ preload: 是否预加载，auto：自动预加载，none: 不预加载
 
 ```text
 preload: 是否预加载
-source标签中的src属性：指定音频资源URL
+audio标签src属性：预加载音频资源的URL路径
+source标签中的src属性：指定音频资源URL，需要与audio标签src属性性相同
 ```
 
 <audio controls="" preload="auto" height="0" width="0" autoplay="false"
