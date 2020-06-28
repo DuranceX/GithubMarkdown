@@ -331,8 +331,7 @@ https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
 <http://ibruce.info>  
 <bu.ru@qq.com>
 
-嵌入视频
---
+### 嵌入视频
 使用html中的video标签，github markdown暂不支持，Typora支持
 ```html
 <video class="player" 
@@ -364,8 +363,7 @@ preload: 是否预加载，auto：自动预加载，none: 不预加载
     >
 </video>
 
-嵌入音频
---
+### 嵌入音频
 使用html中的audio标签，github markdown暂不支持，Typora支持
 ```html
 <audio controls="" preload="auto" height="0" width="0" autoplay="false"
@@ -761,6 +759,8 @@ details折叠语法
 * 目前github暂时不支持markdown流程控制语法
 * 目前github暂时不支持css语法，如字体颜色、字体等
 * 目前github不支持文本块行号显示
+* [嵌入视频](#嵌入视频)
+* [嵌入音频](#嵌入音频)
 
 ### 上标
 ```text
